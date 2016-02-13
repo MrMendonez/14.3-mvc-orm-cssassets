@@ -1,0 +1,15 @@
+<h1>Room Temperature</h1>
+{{#each roomtemps}}
+  <pre>
+    <form action="/update/{{ id }}" method="post">
+      {{id}}. <input type="text" value="{{roomtemp}}" name="roomtemp"> <small>{{date}}</small>
+      <button type="submit">Too Hot</button>
+      <button type="submit">Too Cold</button>
+      <button type="submit">Just Right</button>
+    </form>
+  </pre>
+{{/each}}
+<form action="/" method="post">
+  <textarea name="wishdata"rows="8" cols="40"></textarea>
+  <button type="submit">Submit</button>
+</form>

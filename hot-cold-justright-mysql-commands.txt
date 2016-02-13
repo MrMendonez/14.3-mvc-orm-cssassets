@@ -1,0 +1,33 @@
+CREATE DATABASE hot-cold-justright_db;
+
+USE hot_cold_justright_db;
+
+CREATE TABLE hot_cold_justright (
+    ->     -> id int NOT NULL AUTO_INCREMENT,
+    ->     -> note varchar(255) NOT NULL,
+    ->     -> date TIMESTAMP,
+    ->     -> PRIMARY KEY (id)
+    ->     -> );
+
+Schema file should look like:
+CREATE DATABASE hot-cold-justright_db;
+
+USE hot_cold_justright_db;
+
+CREATE TABLE hot_cold_justright
+(
+id int NOT NULL AUTO_INCREMENT,
+note varchar(255) NOT NULL,
+'date TIMESTAMP,
+PRIMARY KEY (id)
+);
+
+The following is not needed for schema file:
+
+SHOW COLUMNS from roomtemp;
+
+INSERT INTO hot_cold_justright (roomtemp) VALUES ('Just right.');
+
+SELECT * FROM hot_cold_justright;
+
+DROP DATABASE hot_cold_justright;
