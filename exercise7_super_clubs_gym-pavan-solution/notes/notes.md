@@ -1,26 +1,28 @@
-#### App setup:
+App setup:
 
-	1.create App Dir
-	2.npm init
-	3.npm install express --save
-	4.setup 'index.js' file
-	5.setup static file(html) to test serve data
-	6.npm install express-handlebars --save
-	7.setup handlebars Dir
-	8.config handlebars
-	9.render to page
-	10.npm install method-override
+1. create app diretory
+2. cd into the directory and run `npm init`
+3. run `npm install express --save`
+4. setup 'index.js' file
+5. `npm install express-handlebars --save`
+6. setup the handlebars directory
+7. configure the app for handlebars
+8. render to handlebars
+9. `npm install method-override`
+Database setup:
 
-#### Database setup:
+1. `npm install mysql --save`
+2. navigate to your db folder
+3. get into mysql
+    may be `mysql`
+    or `mysql -u root -p`
+4. run `source schema.sql`
+5. run `source seeds.sql`
+6. get out of mysql by typing and executing `enter`
+Posting to server:
 
-	1.npm install mysql
-	2.mysql config
+1. `npm install body-parser --save`
+2. configure the app for the body-parser npm package
+CSS:
 
-#### Posting to server:
-
-	1.npm install body-parser --save
-	2.config body-parser
-
-#### CSS:
-
-	1.npm i handlebars-helper-css --save-dev
+`npm install handlebars-helper-css --save`

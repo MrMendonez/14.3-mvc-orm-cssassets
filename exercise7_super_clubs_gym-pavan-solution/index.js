@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 // parse application/x-www-form-urlencoded 
 app.use(bodyParser.urlencoded({
-	extended: false
+  extended: false
 }))
 // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'))
@@ -22,7 +22,9 @@ var routes = require('./controllers/super_clubs_controller.js');
 app.use('/', routes);
 app.use('/create', routes);
 app.use('/update', routes);
-app.use('/delete', routes);
+app.use('/destroy', routes);
 
 var port = 3000;
-app.listen(port);
+app.listen(PORT, function(){
+  console.log('Listening on %s', PORT)
+});
